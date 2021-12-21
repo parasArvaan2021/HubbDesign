@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_50sdp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ivFrgHomeHubbIc"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/hubb_chair_logo"
+            app:layout_constraintBottom_toTopOf="@+id/tvFrgHomeUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/where_would_you_like_to_work_robert"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toTopOf="@id/cvFrgHomeSearch"
+            app:layout_constraintTop_toBottomOf="@id/ivFrgHomeHubbIc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvFrgHomeSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFrgHomeUserName">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/cvSearchIvSearch"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/etFrgHomeSearchHubbWorkSpace"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.app.hubbdesign.custom.MyCustomTextView
+                    android:id="@+id/etFrgHomeSearchHubbWorkSpace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/gill_sans_light"
+                    android:hint="@string/find_a_hubb_workspace"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cvSearchIvSearch"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeFeaturedLocationHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Featured Location"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvFrgHomeSearch" />
+
+
+        <View
+            android:id="@+id/frgHomeLineFeaturedLocation"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgHomeFeaturedLocationHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgHomeFeaturedLocationHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeaturedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeLineFeaturedLocation" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeTodayBookingHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Today's Booking"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvFeaturedLocation" />
+
+        <View
+            android:id="@+id/frgHomeLineTodayBooking"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgHomeTodayBookingHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgHomeTodayBookingHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTodayBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeLineTodayBooking" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeNearByHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Nearby"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvTodayBooking" />
+
+        <View
+            android:id="@+id/frgHomeLineNearBy"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgHomeNearByHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgHomeNearByHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNearBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeLineNearBy" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeExploreOurHubHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Explore Our Hubbs"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvNearBy" />
+
+        <View
+            android:id="@+id/frgHomeLineExploreOurHubHeading"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgHomeExploreOurHubHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgHomeExploreOurHubHeading" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvExploreOyHub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeLineExploreOurHubHeading" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgHomeOffersHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Offers"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvExploreOyHub" />
+
+        <View
+            android:id="@+id/frgHomeOffersHeading"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgHomeOffersHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgHomeOffersHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgHomeOffersHeading" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:layout_constraintTop_toBottomOf="@id/rvOffers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

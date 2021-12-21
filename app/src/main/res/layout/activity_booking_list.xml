@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".booking.BookingListActivity">
+
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgBookingHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="Bookings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setTypeFace="@string/nunitoSans_bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBookingSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgBookingHeading">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_6sdp">
+
+                <ImageView
+                    android:id="@+id/ivCvBookingSearchIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etCvBookingSearchBooking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/gill_sans_light"
+                    android:hint="Search bookings"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivCvBookingSearchIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgBookingUpcomingBookingHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Upcoming Bookings"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvBookingSearch" />
+
+        <View
+            android:id="@+id/frgBookingLineUpcoming"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgBookingUpcomingBookingHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgBookingUpcomingBookingHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrgUpcomingBooking"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgBookingLineUpcoming" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgBookingPreviousBookingHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Previous Bookings"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvFrgUpcomingBooking" />
+
+        <View
+            android:id="@+id/frgBookingLinePrevious"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgBookingPreviousBookingHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgBookingPreviousBookingHeading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrgBookingPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgBookingLinePrevious" />
+
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvFrgBookingCanceledBookingHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Canceled Bookings"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvFrgBookingPrevious" />
+
+        <View
+            android:id="@+id/frgBookingLineCancel"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvFrgBookingCanceledBookingHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvFrgBookingCanceledBookingHeading" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrgBookingCanceledBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frgBookingLineCancel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

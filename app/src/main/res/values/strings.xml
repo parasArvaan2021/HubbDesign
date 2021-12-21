@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HubbDesign</string>
+
+
+    <string name="montserrat_medium">Montserrat-Medium.ttf</string>
+    <string name="myriadPro_regular">MyriadPro-Regular.ttf</string>
+    <string name="nunitoSans_bold">Montserrat-Bold.ttf</string>
+    <string name="nunitoSans_bold_italic">NunitoSans-BoldItalic.ttf</string>
+    <string name="nunitoSans_extra_bold">NunitoSans-ExtraBold.ttf</string>
+    <string name="nunitoSans_extra_bold_italic">NunitoSans-ExtraBoldItalic.ttf</string>
+    <string name="nunitoSans_extra_light">NunitoSans-ExtraLight.ttf</string>
+    <string name="nunitoSans_extra_light_italic">NunitoSans-ExtraLightItalic.ttf</string>
+    <string name="nunitoSans_italic">NunitoSans-Italic.ttf</string>
+    <string name="nunitoSans_light">NunitoSans-Light.ttf</string>
+    <string name="nunitoSans_light_italic">NunitoSans-LightItalic.ttf</string>
+    <string name="nunitoSans_regular">Montserrat-Regular.ttf</string>
+    <string name="nunitoSans_semi_bold">Montserrat-SemiBold.ttf</string>
+    <string name="nunitoSans_semi_bold_italic">NunitoSans-SemiBoldItalic.ttf</string>
+    <string name="where_would_you_like_to_work_robert">Where would you like to work, Robert?</string>
+    <string name="find_a_hubb_workspace">Find a hubb workspace</string>
+    <string name="one_waterloo">One Waterloo</string>
+    <string name="_3km_away">3km away</string>
+    <string name="hubb_for_one">Hubb for One</string>
+    <string name="description">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Aliquam at porttitor sem.
+        Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+
+</resources>

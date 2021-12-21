@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:orientation="vertical"
+    tools:context=".booking.BookingCalenderActivity">
+
+    <ImageView
+        android:id="@+id/ivBookingCalenderBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvBookingCalenderNeedHubLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="When will you need a hubb in London, UK?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvBookingCalenderBookingDateHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Booking Date"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBookingCalenderNeedHubLocation" />
+
+            <View
+                android:id="@+id/lineBookingCalenderBookingDate"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvBookingCalenderBookingDateHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvBookingCalenderBookingDateHeading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBookingCalenderView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineBookingCalenderBookingDate">
+
+                <CalendarView
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.HubbDesign.NoActionBar"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvBookingCalenderBookingTimeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Booking Time"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvBookingCalenderView" />
+
+            <View
+                android:id="@+id/lineBookingCalenderBookingTime"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvBookingCalenderBookingTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvBookingCalenderBookingTimeHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvBookingCalenderBookingDurationHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Duration"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_12sdp"
+
+                app:layout_constraintBaseline_toBaselineOf="@id/tvBookingCalenderBookingTimeHeading"
+                app:layout_constraintBottom_toTopOf="@id/cvBookingCalenderDuration"
+                app:layout_constraintStart_toStartOf="@id/cvBookingCalenderDuration"
+                app:layout_constraintTop_toBottomOf="@id/cvBookingCalenderView" />
+
+            <View
+                android:id="@+id/lineBookingCalenderBookingDuration"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvBookingCalenderBookingDurationHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvBookingCalenderBookingDurationHeading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBookingCalenderTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lineBookingCalenderBookingTime"
+                app:layout_constraintTop_toBottomOf="@id/lineBookingCalenderBookingTime">
+
+                <com.app.hubbdesign.custom.MyCustomTextView
+                    android:id="@+id/tvBookingCalendarTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_baseline_access_time_24"
+                    tools:text="04:10 PM"
+                    android:textAllCaps="true"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="--:-- --" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBookingCalenderDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintStart_toEndOf="@id/cvBookingCalenderTimePicker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineBookingCalenderBookingDuration">
+
+                <com.app.hubbdesign.custom.MyCustomEdittext
+                    android:id="@+id/etCvBookingCalenderDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gill_sans"
+                    android:background="@android:color/transparent"
+                    android:text="15"
+                    android:paddingStart="@dimen/_25sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:maxLength="2"
+                    android:textColor="#545454"
+                    android:textSize="@dimen/_14sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBookingCalenderSpinnerHoursOrMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintStart_toEndOf="@id/cvBookingCalenderDuration"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineBookingCalenderBookingDuration">
+
+                <com.app.hubbdesign.custom.MyCustomTextView
+                    android:id="@+id/tvCvBookingCalenderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="min"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:fontFamily="@font/gill_sans"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.app.hubbdesign.custom.MyCustomTextView
+        android:id="@+id/tvBookingCalenderNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ic_rounded_background_button"
+        android:drawableEnd="@drawable/ic_white_next_arrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:drawableTint="@color/white"
+        app:setTypeFace="@string/nunitoSans_bold" />
+</LinearLayout>

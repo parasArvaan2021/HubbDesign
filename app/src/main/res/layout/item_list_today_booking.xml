@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTodayBooking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCvTodayBooking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:background="@drawable/ic_cv_featured_location"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCvTodayBookingHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="@string/one_waterloo"
+                android:textColor="#fefefe"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCvTodayBooking" />
+
+            <TextView
+                android:id="@+id/tvCvTodayBookingDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:fontFamily="@font/gill_sans"
+                android:text="@string/hubb_for_one"
+                android:textColor="#8a8a8a"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCvTodayBookingHeading" />
+
+            <TextView
+                android:id="@+id/tvCvTodayBookingKiloMeter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/gill_sans"
+                android:drawableTint="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/_3km_away"
+                android:textColor="#fefefe"
+                android:textSize="@dimen/_10sdp"
+                app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCvTodayBookingDescription" />
+
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvCvTodayBookingUnlockHub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlock Hubb"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:textColor="#8a8a8a"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/ic_white_rounded_textview"
+                android:drawableStart="@drawable/ic_qr_code"
+                app:setTypeFace="@string/myriadPro_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvCvTodayBookingHeading"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
