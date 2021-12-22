@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:orientation="vertical"
+    tools:context=".profile.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/ivProfileBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <com.app.hubbdesign.custom.MyCustomTextView
+        android:id="@+id/tvProfileYourProfileHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="Your Profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_50sdp">
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfilePersonalInfo"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Personal Information"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivProfilePersonalInfoLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/profile_user"
+                app:layout_constraintBottom_toBottomOf="@id/etProfilePersonalInfo"
+                app:layout_constraintEnd_toEndOf="@id/etProfilePersonalInfo"
+                app:layout_constraintTop_toTopOf="@id/etProfilePersonalInfo" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfilePaymentOption"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Payment Option"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfilePersonalInfo" />
+
+            <ImageView
+                android:id="@+id/ivProfilePaymentOptionLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/credit_card"
+                app:layout_constraintBottom_toBottomOf="@id/etProfilePaymentOption"
+                app:layout_constraintEnd_toEndOf="@id/etProfilePaymentOption"
+                app:layout_constraintTop_toTopOf="@id/etProfilePaymentOption" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileCreditsBalance"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Credits Balance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfilePaymentOption" />
+
+            <ImageView
+                android:id="@+id/ivProfileCreditsBalanceLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/diamond"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileCreditsBalance"
+                app:layout_constraintEnd_toEndOf="@id/etProfileCreditsBalance"
+                app:layout_constraintTop_toTopOf="@id/etProfileCreditsBalance" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvProfileHubbSettingsHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Hubb Settings"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileCreditsBalance" />
+
+            <View
+                android:id="@+id/lineProfileHubbSettingsHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvProfileHubbSettingsHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvProfileHubbSettingsHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileTemperature"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temperature"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineProfileHubbSettingsHeading" />
+
+            <ImageView
+                android:id="@+id/ivProfileTemperatureLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/thermometer_half"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileTemperature"
+                app:layout_constraintEnd_toEndOf="@id/etProfileTemperature"
+                app:layout_constraintTop_toTopOf="@id/etProfileTemperature" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileLighting"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lighting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileTemperature" />
+
+            <ImageView
+                android:id="@+id/ivProfileLightingLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/bulb_dark"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileLighting"
+                app:layout_constraintEnd_toEndOf="@id/etProfileLighting"
+                app:layout_constraintTop_toTopOf="@id/etProfileLighting" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileVolume"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Volume"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileLighting" />
+
+            <ImageView
+                android:id="@+id/ivProfileVolumeLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/volume"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileVolume"
+                app:layout_constraintEnd_toEndOf="@id/etProfileVolume"
+                app:layout_constraintTop_toTopOf="@id/etProfileVolume" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileWifi"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wifi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileVolume" />
+
+            <ImageView
+                android:id="@+id/ivProfileWifiLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/wifi_dark"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileWifi"
+                app:layout_constraintEnd_toEndOf="@id/etProfileWifi"
+                app:layout_constraintTop_toTopOf="@id/etProfileWifi" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvProfileSupportHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Support"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileWifi" />
+
+            <View
+                android:id="@+id/lineProfileSupportHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvProfileSupportHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvProfileSupportHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileSafetyInformation"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Safety Information"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineProfileSupportHeading" />
+
+            <ImageView
+                android:id="@+id/ivProfileSafetyInformationLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/doctor"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileSafetyInformation"
+                app:layout_constraintEnd_toEndOf="@id/etProfileSafetyInformation"
+                app:layout_constraintTop_toTopOf="@id/etProfileSafetyInformation" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileFaq"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/faq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileSafetyInformation" />
+
+            <ImageView
+                android:id="@+id/ivProfileFaqLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/interrogation"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileFaq"
+                app:layout_constraintEnd_toEndOf="@id/etProfileFaq"
+                app:layout_constraintTop_toTopOf="@id/etProfileFaq" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileContactSupport"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contact_support"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileFaq" />
+
+            <ImageView
+                android:id="@+id/ivProfileContactSupportLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/comment"
+                app:layout_constraintBottom_toBottomOf="@id/etProfileContactSupport"
+                app:layout_constraintEnd_toEndOf="@id/etProfileContactSupport"
+                app:layout_constraintTop_toTopOf="@id/etProfileContactSupport" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvProfileLegalHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="@string/legal"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileContactSupport" />
+
+            <View
+                android:id="@+id/lineProfileLegalHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvProfileLegalHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvProfileLegalHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileTermsOfService"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/terms_of_service"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineProfileLegalHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etProfileCancelationPolicy"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cancel_policy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileTermsOfService" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvProfileLogOut"
+                style="@style/ProfilePageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:hint="@string/log_out"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etProfileCancelationPolicy"/>
+
+            <View
+                android:id="@+id/lineProfileLogOut"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#8c8c8c"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/tvProfileLogOut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

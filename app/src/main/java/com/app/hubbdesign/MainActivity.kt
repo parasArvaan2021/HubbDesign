@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.hubbdesign.booking.BookingListActivity
 import com.app.hubbdesign.favorite.FavoriteListActivity
 import com.app.hubbdesign.homeadapter.*
+import com.app.hubbdesign.profile.ProfileActivity
 import com.app.hubbdesign.search.SearchLocationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -51,7 +52,8 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnNext).setOnClickListener {
 //            startActivity(Intent(this,BookingListActivity::class.java))
-            startActivity(Intent(this,FavoriteListActivity::class.java))
+//            startActivity(Intent(this,FavoriteListActivity::class.java))
+            startActivity(Intent(this,ProfileActivity::class.java))
         }
 
         findViewById<TextView>(R.id.etFrgHomeSearchHubbWorkSpace).setOnClickListener{

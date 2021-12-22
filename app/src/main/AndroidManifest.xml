@@ -10,11 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HubbDesign">
         <activity
-            android:name=".favorite.FavoriteListActivity"
+            android:name=".profile.ProfileActivity"
             android:exported="true" />
         <activity
+            android:name=".favorite.FavoriteListActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".explorehub.ExploreHubActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".search.SearchResultActivity"
             android:exported="true" />
