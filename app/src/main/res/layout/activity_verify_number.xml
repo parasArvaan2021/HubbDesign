@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".verify.VerifyNumberActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivVerifyBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvVerifyHeadingVerifyYourPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="Verify Your Phone Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivVerifyBackButton"
+            app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvVerifyNumberHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:fontFamily="@font/gill_sans"
+            android:text="@string/verify_number_hint"
+            android:textColor="#545454"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="@id/tvVerifyHeadingVerifyYourPhoneNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVerifyHeadingVerifyYourPhoneNumber" />
+
+        <LinearLayout
+            android:id="@+id/llVerifyOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVerifyNumberHint">
+
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvVerifyNumberOne"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_line"
+                android:backgroundTint="#666666"
+                android:text="1" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvVerifyNumberTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@drawable/ic_line"
+                android:backgroundTint="#666666" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvVerifyNumberThree"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@drawable/ic_line"
+                android:backgroundTint="#666666" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvVerifyNumberFour"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/ic_line"
+                android:backgroundTint="#666666" />
+
+        </LinearLayout>
+
+
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvVerifyVerifyAccountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/ic_rounded_white_text_view"
+            android:backgroundTint="@color/featuredLocation_blue"
+            android:gravity="center"
+            android:text="Verify Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llVerifyOtp"
+            app:setTypeFace="@string/myriadPro_regular" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvVerifyResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resend code"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvVerifyVerifyAccountButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

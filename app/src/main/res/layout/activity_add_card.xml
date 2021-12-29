@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:orientation="vertical"
+    tools:context=".addcard.AddCardActivity">
+
+    <ImageView
+        android:id="@+id/ivAddCardBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvAddCardAddCardDetailsHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Add Card Details"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineTvAddCardAddCardDetailsHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvAddCardAddCardDetailsHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvAddCardAddCardDetailsHeading"/>
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardNameOnCard"
+                android:hint="Name On Card"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvAddCardAddCardDetailsHeading"
+                style="@style/add_card_edit_text" />
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardCardNumber"
+                android:hint="Card Number"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAddCardNameOnCard"
+                style="@style/add_card_edit_text" />
+
+            <ImageView
+                android:id="@+id/ivAddCardCardLogo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/credit_card"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                app:layout_constraintTop_toTopOf="@id/etAddCardCardNumber"
+                app:layout_constraintBottom_toBottomOf="@id/etAddCardCardNumber"
+                app:layout_constraintEnd_toEndOf="@id/etAddCardCardNumber"/>
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardExpiration"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="Expiration"
+                style="@style/add_card_edit_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/etAddCardCardNumber"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardCvv"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                style="@style/add_card_edit_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAddCardCardNumber"
+                app:layout_constraintStart_toEndOf="@id/etAddCardExpiration"/>
+
+
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardZipCode"
+                android:hint="Zip Code"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAddCardExpiration"
+                style="@style/add_card_edit_text" />
+            <com.app.hubbdesign.custom.MyCustomEdittext
+                android:id="@+id/etAddCardCountryRegion"
+                android:hint="Country/Region"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAddCardZipCode"
+                style="@style/add_card_edit_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.app.hubbdesign.custom.MyCustomTextView
+        android:id="@+id/tvAddCardSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ic_rounded_background_button"
+        android:gravity="center"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:setTypeFace="@string/myriadPro_regular" />
+
+</LinearLayout>

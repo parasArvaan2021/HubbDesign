@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupsecond.SignUpSecondActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivSignUpSecondBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpSecondAddInformationHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="Add Information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivSignUpSecondBackButton"
+            app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpSecondFirstName"
+            style="@style/signup_second_edit_text"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignUpSecondAddInformationHeading" />
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpSecondLastName"
+            style="@style/signup_second_edit_text"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpSecondFirstName" />
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpSecondEmail"
+            style="@style/signup_second_edit_text"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpSecondLastName" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpSecondEmailHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans"
+            android:text="We'll send your reservations to your email."
+            android:textColor="#545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpSecondEmail" />
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpSecondPassword"
+            style="@style/signup_second_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignUpSecondEmailHint" />
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpSecondConfirmPassword"
+            style="@style/signup_second_edit_text"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpSecondPassword" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpSecondTermsHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans"
+            android:text="@string/signup_second_terms_hint"
+            android:textColor="#545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpSecondConfirmPassword" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpSecondAgreeAndContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/ic_rounded_white_text_view"
+            android:backgroundTint="@color/featuredLocation_blue"
+            android:gravity="center"
+            android:text="Agree and Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignUpSecondTermsHint"
+            app:setTypeFace="@string/myriadPro_regular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

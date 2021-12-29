@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
-import android.widget.ImageView
+
 import com.app.hubbdesign.R
 import com.app.hubbdesign.choosehubsize.ChooseHubSizeActivity
+import com.app.hubbdesign.paymentoption.PaymentOptionActivity
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,9 @@ class ProfileActivity : AppCompatActivity() {
 
         findViewById<EditText>(R.id.etProfilePersonalInfo).setOnClickListener {
             Log.i("TAG", "onCreate: comoing")
+        }
+        findViewById<EditText>(R.id.etProfilePaymentOption).setOnClickListener {
+           startActivity(Intent(this, PaymentOptionActivity::class.java))
         }
 
         findViewById<EditText>(R.id.etProfileFaq).setOnClickListener {

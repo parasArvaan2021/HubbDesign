@@ -4,37 +4,67 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable-v24/ic_rounded_white_text_view.xml" value="0.24739583333333334" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/default_dot.xml" value="0.185546875" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_back_arrow.xml" value="0.24739583333333334" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.24739583333333334" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.24739583333333334" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_baseline_wifi_24.xml" value="0.185546875" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_card_logo.xml" value="0.185546875" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_edit.xml" value="0.185546875" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_icon_recenter.xml" value="0.24739583333333334" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_location_user.xml" value="0.185546875" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_minus.xml" value="0.24739583333333334" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_rectangle_explore_hub.xml" value="0.202991452991453" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_rounded_background_button.xml" value="0.24739583333333334" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_visa_card.xml" value="0.185546875" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_white_next_arrow.xml" value="0.24739583333333334" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/ic_white_rounded_textview.xml" value="0.24739583333333334" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/round_rect.xml" value="0.202991452991453" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/round_rect_shadow.xml" value="0.185546875" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/rounded_white.xml" value="0.18283294842186298" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/selected_dot.xml" value="0.185546875" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/drawable/tab_selector.xml" value="0.185546875" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_add_card.xml" value="0.15" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_booking.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_booking_calander.xml" value="0.22" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_booking_list.xml" value="0.21851851851851853" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_choose_hub_size.xml" value="0.21851851851851853" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_credit_balance.xml" value="0.25" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_explore_hub.xml" value="0.25" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_favorite_list.xml" value="0.18632478632478633" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_location.xml" value="0.2" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_login.xml" value="0.1703125" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_offer.xml" value="0.18" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_payment_option.xml" value="0.18" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_redeem_offer.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_reservation_confirm.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_reservation_review.xml" value="0.22" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_search_location.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_search_result.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_searvh_location.xml" value="0.22708333333333333" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_sign_up_first.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_sign_up_second.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/activity_verify_number.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_available_hub.xml" value="0.22" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_booking_cancel.xml" value="0.17222222222222222" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_booking_previous.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_booking_upcoming.xml" value="0.1703125" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_cancel_booking.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_explore_hub_cardview_list.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_explore_our_hubb.xml" value="0.22708333333333333" />
-        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_favorite_list.xml" value="0.17222222222222222" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_favorite_list.xml" value="0.25" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_featured_location.xml" value="0.22708333333333333" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_location_facility.xml" value="0.5" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_location_slider.xml" value="0.1703125" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_nearby.xml" value="0.5" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_offers.xml" value="0.22708333333333333" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_offers_available_location.xml" value="0.1703125" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_payment_option_card_details.xml" value="0.1703125" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_previous_booking.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_previous_search.xml" value="0.22708333333333333" />
+        <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_recent_activity_credits_balance.xml" value="0.24467099165894346" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_search_result.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_today_booking.xml" value="0.22708333333333333" />
         <entry key="..\:/Paras/AllDemo/HubbDesign/app/src/main/res/layout/item_list_upcoming_booking.xml" value="0.22708333333333333" />

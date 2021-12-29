@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".offer.OfferActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivOffersImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_200sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/image"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivOffersBackButton"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/rounded_white"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_back_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivOffersImage" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOffersFreeStarbucksColdBrewRefillHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Free Starbucks Cold Brew Refill"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivOffersImage" />
+
+            <View
+                android:id="@+id/lineTvOffersFreeStarbucksColdBrewRefillHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvOffersFreeStarbucksColdBrewRefillHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvOffersFreeStarbucksColdBrewRefillHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOffersAboutThisOffersHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="About This offer"
+                android:textColor="#222222"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOffersFreeStarbucksColdBrewRefillHeading"/>
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOffersAboutThisOffersDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/about_this_offer_description"
+                android:textColor="#8a8a8a"
+                android:textSize="@dimen/_11sdp"
+                app:setTypeFace="@string/myriadPro_regular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tvOffersAboutThisOffersHeading"/>
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOffersAvailableLocationHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Available Locations"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOffersAboutThisOffersDescription" />
+
+            <View
+                android:id="@+id/lineTvOffersAvailableLocationHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvOffersAvailableLocationHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvOffersAvailableLocationHeading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOffersAvailableLocation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:listitem="@layout/item_list_offers_available_location"
+                tools:itemCount="2"
+                android:overScrollMode="never"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvOffersAvailableLocationHeading"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <com.app.hubbdesign.custom.MyCustomTextView
+        android:id="@+id/tvOffersRedeemOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ic_rounded_white_text_view"
+        android:backgroundTint="@color/featuredLocation_blue"
+        android:gravity="center"
+        android:text="Redeem Offer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:setTypeFace="@string/myriadPro_regular" />
+</LinearLayout>

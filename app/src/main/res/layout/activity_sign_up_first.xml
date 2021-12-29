@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:paddingBottom="@dimen/_15sdp"
+    tools:context=".signupfirst.SignUpFirstActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivSignUpFirstLogo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/login_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivSignUpFirstBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivSignUpFirstLogo" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpFirstCreateYourAccountHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="Create Your Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivSignUpFirstBackButton"
+            app:setTypeFace="@string/nunitoSans_extra_bold" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/etSignUpFirstSelectCountry"
+            style="@style/login_edit_text"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:text="Choose Country/ Region"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignUpFirstCreateYourAccountHeading" />
+
+        <View
+            android:id="@+id/lineEtSignUpFirstSelectCountry"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#8c8c8c"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpFirstSelectCountry"/>
+
+
+        <com.app.hubbdesign.custom.MyCustomEdittext
+            android:id="@+id/etSignUpFirstPHoneNumber"
+            style="@style/login_edit_text"
+            android:hint="Phone Number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpFirstSelectCountry" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpFirstPhoneNumberDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/gill_sans"
+            android:text="@string/signup_first_number_description"
+            android:textColor="#545454"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSignUpFirstPHoneNumber"
+            app:layout_goneMarginEnd="@dimen/_15sdp" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpFirstContinueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/ic_rounded_white_text_view"
+            android:backgroundTint="@color/featuredLocation_blue"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignUpFirstPhoneNumberDescription"
+            app:setTypeFace="@string/myriadPro_regular" />
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvSignUpFirstAlreadyHaveAnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Already have an account? Log in"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

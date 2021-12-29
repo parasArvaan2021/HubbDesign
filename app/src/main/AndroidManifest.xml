@@ -10,8 +10,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HubbDesign">
         <activity
-            android:name=".profile.ProfileActivity"
+            android:name=".reservationConfirmation.ReservationConfirmActivity"
             android:exported="true" />
+        <activity
+            android:name=".redeemoffer.RedeemOfferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".offer.OfferActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".signupsecond.SignUpSecondActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".verify.VerifyNumberActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".signupfirst.SignUpFirstActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".addcard.AddCardActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".paymentoption.PaymentOptionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".creditbalance.CreditBalanceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".reservation.ReservationReviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".location.LocationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".favorite.FavoriteListActivity"
             android:exported="true"
@@ -41,6 +84,11 @@
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".login.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.Design.Light.NoActionBar"
             android:windowSoftInputMode="adjustNothing">

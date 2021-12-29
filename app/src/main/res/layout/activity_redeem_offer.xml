@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="#EFF1F4"
+    tools:context=".redeemoffer.RedeemOfferActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivRedeemOfferBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.app.hubbdesign.custom.MyCustomTextView
+            android:id="@+id/tvRedeemOffersRedeemOfferHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/gill_sans_bold"
+            android:text="Redeem Offer"
+            android:textColor="@color/featuredLocation_blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivRedeemOfferBackButton" />
+
+        <View
+            android:id="@+id/lineTvRedeemOffersRedeemOfferHeading"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/featuredLocation_blue"
+            app:layout_constraintStart_toStartOf="@id/tvRedeemOffersRedeemOfferHeading"
+            app:layout_constraintTop_toBottomOf="@id/tvRedeemOffersRedeemOfferHeading" />
+
+   <com.app.hubbdesign.custom.MyCustomTextView
+       android:id="@+id/tvRedeemOfferOfferHeading"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="Free Starbucks Cold Brew Refill"
+       android:textColor="#222222"
+       android:textSize="@dimen/_12sdp"
+       android:fontFamily="@font/gill_sans_bold"
+       android:layout_marginStart="@dimen/_15sdp"
+       android:layout_marginEnd="@dimen/_15sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/lineTvRedeemOffersRedeemOfferHeading"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvRedeemOfferQrCode"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvRedeemOfferOfferHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:scaleType="centerCrop"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

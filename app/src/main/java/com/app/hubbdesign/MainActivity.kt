@@ -5,14 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.app.hubbdesign.booking.BookingListActivity
-import com.app.hubbdesign.favorite.FavoriteListActivity
 import com.app.hubbdesign.homeadapter.*
-import com.app.hubbdesign.profile.ProfileActivity
+import com.app.hubbdesign.offer.OfferActivity
+import com.app.hubbdesign.paymentoption.PaymentOptionActivity
+import com.app.hubbdesign.reservation.ReservationReviewActivity
+import com.app.hubbdesign.reservationConfirmation.ReservationConfirmActivity
 import com.app.hubbdesign.search.SearchLocationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var rvToday:RecyclerView
     lateinit var textview:TextView
     lateinit var textviewLine:View
-    lateinit var btnNext:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -53,11 +53,14 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnNext).setOnClickListener {
 //            startActivity(Intent(this,BookingListActivity::class.java))
 //            startActivity(Intent(this,FavoriteListActivity::class.java))
-            startActivity(Intent(this,ProfileActivity::class.java))
+            startActivity(Intent(this,ReservationConfirmActivity::class.java))
         }
 
         findViewById<TextView>(R.id.etFrgHomeSearchHubbWorkSpace).setOnClickListener{
             startActivity(Intent(this,SearchLocationActivity::class.java))
+        }
+        findViewById<ImageView>(R.id.ivFrgHomeHubbIc).setOnClickListener{
+            startActivity(Intent(this,ReservationReviewActivity::class.java))
         }
 
     }

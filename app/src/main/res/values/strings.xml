@@ -30,5 +30,12 @@
     <string name="terms_of_service">Terms of Service</string>
     <string name="contact_support">Contact Support</string>
     <string name="faq">FAQ</string>
+    <string name="location_about_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+    <string name="location_TheNeighborhood_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+    <string name="cancelationPolicyDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</string>
+    <string name="signup_first_number_description">We\'ll text you to confirm your number. Standard message and data rates apply.</string>
+    <string name="verify_number_hint">We sent a 4 digit code to your phone. To verify it, please enter the code provided below.</string>
+    <string name="signup_second_terms_hint">By selecting agree and continue below, I confirm that I am over 18 years old agree to the terms of service and privacy policy of this app.</string>
+    <string name="about_this_offer_description">What\'s better than a cold brew in the summer? A free cold brew.<p>\n\nStarbucks is offering a free refill to anyone who has reserved a Hubb in the month of June.</p> <p>\n\nOffer is only available at select locations and redeemable once.</p></string>
 
 </resources>
