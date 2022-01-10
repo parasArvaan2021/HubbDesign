@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HubbDesign">
         <activity
+            android:name=".reservationcancel.ReservationCancelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".openhub.OpenHubActivity"
+            android:exported="true" />
+        <activity
             android:name=".reservationConfirmation.ReservationConfirmActivity"
             android:exported="true" />
         <activity

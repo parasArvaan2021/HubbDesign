@@ -37,5 +37,8 @@
     <string name="verify_number_hint">We sent a 4 digit code to your phone. To verify it, please enter the code provided below.</string>
     <string name="signup_second_terms_hint">By selecting agree and continue below, I confirm that I am over 18 years old agree to the terms of service and privacy policy of this app.</string>
     <string name="about_this_offer_description">What\'s better than a cold brew in the summer? A free cold brew.<p>\n\nStarbucks is offering a free refill to anyone who has reserved a Hubb in the month of June.</p> <p>\n\nOffer is only available at select locations and redeemable once.</p></string>
+    <string name="reservation_confirm_direction">This Hubb is located on the 2nd floor of building B, NW. You\'ll see starbucks near by.</string>
+    <string name="open_hub_instruction">Instructions go here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</string>
+    <string name="open_hub_need_help">Contact Support information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</string>
 
 </resources>

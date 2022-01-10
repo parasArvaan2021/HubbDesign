@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.app.hubbdesign.homeadapter.*
 import com.app.hubbdesign.offer.OfferActivity
+import com.app.hubbdesign.openhub.OpenHubActivity
 import com.app.hubbdesign.paymentoption.PaymentOptionActivity
 import com.app.hubbdesign.reservation.ReservationReviewActivity
 import com.app.hubbdesign.reservationConfirmation.ReservationConfirmActivity
+import com.app.hubbdesign.reservationcancel.ReservationCancelActivity
 import com.app.hubbdesign.search.SearchLocationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -53,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnNext).setOnClickListener {
 //            startActivity(Intent(this,BookingListActivity::class.java))
 //            startActivity(Intent(this,FavoriteListActivity::class.java))
-            startActivity(Intent(this,ReservationConfirmActivity::class.java))
+            startActivity(Intent(this,ReservationCancelActivity::class.java))
         }
 
         findViewById<TextView>(R.id.etFrgHomeSearchHubbWorkSpace).setOnClickListener{

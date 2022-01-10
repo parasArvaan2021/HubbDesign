@@ -26,7 +26,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp">
 
             <com.app.hubbdesign.custom.MyCustomTextView
                 android:id="@+id/tvReservationConfirmYourReservationHeading"
@@ -136,8 +137,9 @@
 
                     <ImageView
                         android:id="@+id/ivCvReservationConfirmDirection"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_navigation"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -175,7 +177,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/_10sdp">
+                    android:padding="@dimen/_8sdp">
 
                     <ImageView
                         android:id="@+id/ivCvReservationConfirmUnlocakHubLogo"
@@ -347,8 +349,9 @@
                     <com.app.hubbdesign.custom.MyCustomTextView
                         android:id="@+id/tvCvReservationConfirmExtendHubDurationExtendHubHeading"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="25dp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
                         android:text="Extend your Hubb Duration"
                         android:textColor="#8a8a8a"
                         android:textSize="@dimen/_12sdp"
@@ -380,7 +383,7 @@
 
                     <com.app.hubbdesign.custom.MyCustomTextView
                         android:id="@+id/tvReservationConfirmHubSizeHeading"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_5sdp"
@@ -389,11 +392,12 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14sdp"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <com.app.hubbdesign.custom.MyCustomTextView
                         android:id="@+id/tvReservationConfirmHubForOneHeading"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_2sdp"
@@ -402,6 +406,7 @@
                         android:textColor="#8a8a8a"
                         android:textSize="@dimen/_12sdp"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvReservationConfirmHubSizeHeading" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -423,6 +428,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_file"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <com.app.hubbdesign.custom.MyCustomTextView
                         android:id="@+id/tvCvRcPriceDetailsHeading"
@@ -642,9 +654,9 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
                         android:text="HMFWZBJ4YM"
                         android:textColor="#8a8a8a"
-                        android:layout_marginTop="@dimen/_3sdp"
                         android:textSize="@dimen/_10sdp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -672,7 +684,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cvReservationConfirmConfirmationCode" />
 
             <View
-                android:id="@+id/lineTvReservationConfirmCancelationHeading"
+                android:id="@+id/lineTvReservationConfirmGrettingThreeHeading"
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="3dp"
                 android:layout_marginTop="@dimen/_3sdp"
@@ -680,12 +692,286 @@
                 app:layout_constraintStart_toStartOf="@id/tvReservationConfirmGettingThereHeading"
                 app:layout_constraintTop_toBottomOf="@id/tvReservationConfirmGettingThereHeading" />
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvReservationConfirmMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvReservationConfirmGrettingThreeHeading">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapAddressHeading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gill_sans_bold"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapAddressShow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="1234 Address Blvd. Waterloo, London, UK"
+                        android:textColor="#8a8a8a"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapAddressHeading"
+                        app:setTypeFace="@string/myriadPro_regular" />
+
+                    <ImageView
+                        android:id="@+id/frgCvRcMap"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapAddressShow" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapDirectionHeading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/gill_sans_bold"
+                        android:text="Directions"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/frgCvRcMap" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapDirectionShow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/reservation_confirm_direction"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionHeading"
+                        app:setTypeFace="@string/myriadPro_regular" />
+
+                    <ImageView
+                        android:id="@+id/ivCvRcMapNavigation"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_navigation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapNavigateHereHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Navigate\nHere"
+                        android:textColor="#8a8a8a"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintEnd_toStartOf="@id/ivCvRcMapCopy"
+                        app:layout_constraintStart_toEndOf="@id/ivCvRcMapNavigation"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow"
+                        app:setTypeFace="@string/myriadPro_regular" />
+
+                    <ImageView
+                        android:id="@+id/ivCvRcMapCopy"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_copy"
+                        app:layout_constraintEnd_toStartOf="@id/tvCvRcMapCopyAddressHeading"
+                        app:layout_constraintStart_toEndOf="@id/tvCvRcMapNavigateHereHeading"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapCopyAddressHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copy\nAddress"
+                        android:textColor="#8a8a8a"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toStartOf="@id/ivCvRcMapSearch"
+                        app:layout_constraintStart_toEndOf="@id/ivCvRcMapCopy"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow"
+                        app:setTypeFace="@string/myriadPro_regular" />
+
+                    <ImageView
+                        android:id="@+id/ivCvRcMapSearch"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_baseline_search_24"
+                        app:layout_constraintEnd_toStartOf="@id/tvCvRcMapFindMyHubHeading"
+                        app:layout_constraintStart_toEndOf="@id/tvCvRcMapCopyAddressHeading"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcMapFindMyHubHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find my\nHubb"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#8a8a8a"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toEndOf="@id/ivCvRcMapSearch"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcMapDirectionShow"
+                        app:setTypeFace="@string/myriadPro_regular" />
 
 
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvReservationConfirmCancelationHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Cancelation"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvReservationConfirmMap" />
+
+            <View
+                android:id="@+id/lineTvReservationConfirmCancelationHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvReservationConfirmCancelationHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvReservationConfirmCancelationHeading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvRcCancelationPolicy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvReservationConfirmCancelationHeading">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcCancelationPolicyHeading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/gill_sans_bold"
+                        android:text="Cancelation Policy"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcCancelationPolicyShow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Read More"
+                        android:textColor="#8a8a8a"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvCvRcCancelationPolicyHeading"
+                        app:setTypeFace="@string/myriadPro_regular" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvReservationConfirmCancelYourReservation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvRcCancelationPolicy">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivCvRcCancelReservationCross"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_cancel"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.app.hubbdesign.custom.MyCustomTextView
+                        android:id="@+id/tvCvRcCancelReservationHubHeading"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Cancel Your Reservation"
+                        android:textColor="#8a8a8a"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="@id/ivCvRcCancelReservationCross"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivCvRcCancelReservationCross"
+                        app:layout_constraintTop_toTopOf="@id/ivCvRcCancelReservationCross"
+                        app:setTypeFace="@string/myriadPro_regular" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+
 
 </LinearLayout>

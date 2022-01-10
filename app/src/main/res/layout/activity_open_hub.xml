@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F4"
+    android:orientation="vertical"
+    tools:context=".openhub.OpenHubActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubLocationHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Open Hubb Location"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineTvOpenHubLocationHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvOpenHubLocationHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubLocationHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubInstruction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_light"
+                android:text="@string/open_hub_instruction"
+                android:textColor="#545454"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvOpenHubLocationHeading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOpenHubQrCode"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubInstruction">
+
+                <ImageView
+                    android:id="@+id/ivCvOpenHubQr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image" />
+            </androidx.cardview.widget.CardView>
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubSetHubSettingsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Set Hubb Settings"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvOpenHubQrCode" />
+
+            <View
+                android:id="@+id/lineTvOpenHubSetHubSettingsHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvOpenHubSetHubSettingsHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubSetHubSettingsHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubSetHubSettingDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_light"
+                android:text="Set wifi, temperature, lighting, etc."
+                android:textColor="#545454"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lineTvOpenHubSetHubSettingsHeading" />
+
+            <ImageView
+                android:id="@+id/ivOpenHubSetHubSettingForwardArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                app:layout_constraintEnd_toEndOf="@id/cvOpenHubQrCode"
+                app:layout_constraintTop_toBottomOf="@id/cvOpenHubQrCode" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubNeedHelpHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_bold"
+                android:text="Need Help?"
+                android:textColor="@color/featuredLocation_blue"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubSetHubSettingDescription" />
+
+            <View
+                android:id="@+id/lineTvOpenHubNeedHelpHeading"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/featuredLocation_blue"
+                app:layout_constraintStart_toStartOf="@id/tvOpenHubNeedHelpHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubNeedHelpHeading" />
+
+            <com.app.hubbdesign.custom.MyCustomTextView
+                android:id="@+id/tvOpenHubNeedHelpDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/gill_sans_light"
+                android:text="@string/open_hub_need_help"
+                android:textColor="#545454"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOpenHubNeedHelpHeading" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.app.hubbdesign.custom.MyCustomTextView
+        android:id="@+id/tvOpenHubContactSupportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rounded_background_button"
+        android:text="contact Support"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:setTypeFace="@string/myriadPro_regular"/>
+
+</LinearLayout>
