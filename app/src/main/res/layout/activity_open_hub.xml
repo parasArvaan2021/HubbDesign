@@ -35,7 +35,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:fontFamily="@font/gill_sans_bold"
-                android:text="Open Hubb Location"
+                android:text="Open Desq Location"
                 android:textColor="@color/featuredLocation_blue"
                 android:textSize="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="parent"
