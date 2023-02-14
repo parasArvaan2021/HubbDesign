@@ -107,7 +107,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyANLW2jVj5uMK_4-YZK7mhknjMOhgW63e4" />
+            android:value="@string/google_map_key" />
     </application>
 
 </manifest>

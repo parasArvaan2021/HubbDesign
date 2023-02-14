@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HubbDesign</string>
 
-
+    <string name="google_map_key">AIzaSyANLW2jVj5uMK_4-YZK7mhknjMOhgW63e4</string>
     <string name="montserrat_medium">Montserrat-Medium.ttf</string>
     <string name="myriadPro_regular">MyriadPro-Regular.ttf</string>
     <string name="nunitoSans_bold">Montserrat-Bold.ttf</string>
